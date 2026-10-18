@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #f4f3ee;
+  background: #10100f;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at 85% 0, #40321c 0, transparent 32rem), #10100f; }
+main { width: min(940px, calc(100% - 32px)); margin: 48px auto 96px; }
+header { margin-bottom: 32px; }
+h1 { font-size: clamp(2.2rem, 7vw, 5.4rem); line-height: .94; letter-spacing: -.055em; max-width: 800px; margin: 10px 0 18px; }
+.eyebrow { color: #ffbe3d; letter-spacing: .18em; font-weight: 800; font-size: .76rem; }
+header > p:last-child { color: #aaa79f; font-size: 1.1rem; }
+form, #status { background: #191918; border: 1px solid #36342f; border-radius: 20px; padding: 24px; box-shadow: 0 30px 80px #0007; }
+.project { display: grid; gap: 8px; margin-bottom: 24px; font-weight: 700; }
+input { width: 100%; background: #0e0e0d; border: 1px solid #45423c; border-radius: 10px; color: #fff; padding: 12px 13px; font: inherit; outline: none; }
+input:focus { border-color: #ffbe3d; box-shadow: 0 0 0 3px #ffbe3d22; }
+article { display: grid; grid-template-columns: 56px 1.4fr 1fr auto; gap: 14px; align-items: end; padding: 16px 0; border-top: 1px solid #302e29; }
+article label { display: grid; gap: 7px; color: #c5c2b9; font-size: .85rem; }
+.number { font-weight: 900; font-size: 1.4rem; color: #ffbe3d; padding-bottom: 10px; }
+button { border: 0; border-radius: 999px; padding: 13px 20px; background: #ffbe3d; color: #16120a; font-weight: 850; font-size: .95rem; cursor: pointer; }
+.secondary { background: transparent; color: #ffbe3d; border: 1px solid #605331; margin: 18px 0; }
+.hint { color: #aaa79f; margin: 0 0 22px; font-size: .9rem; }
+.remove { background: transparent; border: 1px solid #514e47; color: #aaa79f; padding: 11px 14px; }
+.remove:hover { border-color: #d66f5e; color: #f49a8b; }
+.rights { display: flex; align-items: flex-start; gap: 10px; color: #bcb9b1; margin: 16px 0 24px; font-size: .9rem; }
+.rights input { width: auto; margin-top: 3px; }
+#status { margin-top: 24px; }
+#state { text-transform: uppercase; color: #ffbe3d; font-weight: 900; letter-spacing: .12em; }
+pre { white-space: pre-wrap; color: #a7d9ac; max-height: 340px; overflow: auto; }
+@media (max-width: 700px) {
+  main { margin-top: 28px; }
+  article { grid-template-columns: 44px 1fr; }
+  .number { grid-row: 1 / span 3; }
+  article label, article label:last-of-type, .remove { grid-column: 2; }
+  .remove { justify-self: start; }
+  form, #status { padding: 18px; }
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok & Instagram Video Downloader</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <main>
+    <header><p class="eyebrow">LOCAL VIDEO DOWNLOADER</p><h1>TikTok & Instagram → one folder</h1><p>Paste up to twenty TikTok or Instagram video links in any combination. The platform is detected automatically, and videos are numbered in your chosen order.</p></header>
+    <form id="form">
+      <label class="project">Project name<input id="name" required placeholder="Weekly finds 01"></label>
+      <section id="items"></section>
+      <button type="button" class="secondary" id="add">Add another video</button>
+      <p class="hint">Files are prefixed 01–20. Blank labels use the TikTok creator and video ID, or the Instagram post code.</p>
+      <label class="rights"><input id="rights" type="checkbox" required><span>I confirm I am authorized to download, edit, and reuse these videos.</span></label>
+      <button id="submit">Download videos</button>
+      <p class="hint">Videos are saved in this app’s output folder.</p>
+    </form>
+    <section id="status" hidden><h2>Download status</h2><div id="state"></div><pre id="log"></pre></section>
+  </main>
+  <script src="app.js"></script>
+</body></html>
